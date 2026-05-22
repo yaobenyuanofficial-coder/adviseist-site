@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Adviseist — 戶外運動裝備評測｜攀岩 × 露營 × 跑步 × 球類</title>
+<meta name="description" content="Adviseist 由戶外運動 15 年老手 Tony 主筆，專注攀岩、露營、跑步、球類裝備實測評比。提供 2026 最新型號比較與選購建議。">
+<link rel="canonical" href="https://adviseist.com/">
+
+<meta property="og:title" content="Adviseist — Tested. Verified. Recommended.">
+<meta property="og:description" content="戶外運動裝備實測評比，15 年實戰經驗。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/images/adviseist-og.webp">
+<meta property="og:url" content="https://adviseist.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Adviseist — 戶外運動裝備評測｜攀岩 × 露營 × 跑步 × 球類">
+<meta name="twitter:description" content="Adviseist 由戶外運動 15 年老手 Tony 主筆，專注攀岩、露營、跑步、球類裝備實測評比。提供 2026 最新型號比較與選購建議。">
+<meta name="twitter:image" content="https://adviseist.com/assets/images/adviseist-og.webp">
+<link rel="icon" type="image/png" href="/assets/images/adviseist-favicon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Adviseist",
+  "url": "https://adviseist.com/",
+  "description": "戶外運動裝備評測站",
+  "publisher": { "@type": "Organization", "name": "Adviseist" }
+}
+</script>
+
+<style>
+:root {
+  --navy: #1E3A5F;
+  --navy-dark: #0f2440;
+  --orange: #FF6B35;
+  --orange-dark: #e0541d;
+  --bg: #f4f6f8;
+  --ink: #1a2433;
+  --muted: #5a6677;
+  --line: #d9dde3;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Roboto', -apple-system, "PingFang TC", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.container { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+
+/* Top bar */
+.topbar { background: var(--navy-dark); color: #b8c2d4; padding: 8px 0; font-size: 12px; }
+.topbar .row { display: flex; justify-content: space-between; }
+
+/* Header */
+header.site { background: var(--navy); color: #fff; padding: 20px 0; }
+header.site .row { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo-mark { width: 38px; height: 38px; background: var(--orange); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 800; }
+.logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.5px; }
+.logo-tag { color: var(--orange); font-size: 11px; letter-spacing: 2px; font-weight: 600; }
+nav.main { display: flex; gap: 28px; }
+nav.main a { color: #fff; text-decoration: none; font-weight: 500; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+nav.main a:hover { color: var(--orange); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  color: #fff;
+  padding: 80px 0;
+}
+.hero .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; align-items: center; }
+.hero h1 { font-family: 'Montserrat', sans-serif; font-size: 44px; line-height: 1.15; font-weight: 800; margin-bottom: 16px; }
+.hero h1 .acc { color: var(--orange); }
+.hero p.lead { font-size: 17px; color: #b8c2d4; max-width: 540px; margin-bottom: 24px; }
+.hero .stats { display: flex; gap: 30px; margin-top: 30px; }
+.hero .stat .num { font-family: 'Montserrat', sans-serif; font-size: 32px; color: var(--orange); font-weight: 800; }
+.hero .stat .lbl { font-size: 12px; color: #8a96ac; letter-spacing: 1.5px; }
+.hero .panel { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 26px; }
+.hero .panel h4 { color: var(--orange); margin-bottom: 14px; font-size: 13px; letter-spacing: 2px; }
+.hero .panel ul { list-style: none; }
+.hero .panel li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 14px; }
+.hero .panel li:last-child { border-bottom: none; }
+.hero .panel li::before { content: "▸ "; color: var(--orange); }
+
+/* Categories */
+.cat-bar { background: #fff; border-bottom: 4px solid var(--orange); padding: 30px 0; }
+.cat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); }
+.cat-item { background: #fff; padding: 24px 18px; text-align: center; text-decoration: none; color: var(--ink); transition: background .2s; }
+.cat-item:hover { background: var(--bg); }
+.cat-item .ico { font-size: 28px; margin-bottom: 8px; }
+.cat-item .name { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+.cat-item .cnt { font-size: 11px; color: var(--muted); margin-top: 4px; }
+
+/* Latest reviews */
+.section { padding: 70px 0; }
+.section-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px; }
+.section-head h2 { font-family: 'Montserrat', sans-serif; font-size: 26px; color: var(--navy); position: relative; padding-left: 20px; }
+.section-head h2::before { content: ''; position: absolute; left: 0; top: 6px; bottom: 6px; width: 5px; background: var(--orange); border-radius: 3px; }
+.section-head a { color: var(--orange); text-decoration: none; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+.review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.review-card { background: #fff; border-radius: 6px; overflow: hidden; box-shadow: 0 1px 4px rgba(30, 58, 95, 0.08); transition: transform .2s, box-shadow .2s; }
+.review-card:hover { transform: translateY(-4px); box-shadow: 0 6px 20px rgba(30, 58, 95, 0.14); }
+.review-card .img-area { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--navy), var(--orange)); position: relative; display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 36px; overflow: hidden; }
+.review-card .img-area > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.review-card .img-area > .badge, .review-card .img-area > .rating { z-index: 2; }
+.about-strip .av { overflow: hidden; }
+.about-strip .av img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; }
+.review-card .rating { position: absolute; top: 12px; right: 12px; background: var(--orange); color: #fff; padding: 4px 10px; border-radius: 3px; font-size: 13px; font-weight: 700; }
+.review-card .badge { position: absolute; top: 12px; left: 12px; background: var(--navy-dark); color: #fff; padding: 4px 10px; border-radius: 3px; font-size: 11px; letter-spacing: 1px; font-weight: 600; }
+.review-card .info { padding: 22px; }
+.review-card .cat-tag { font-size: 11px; color: var(--orange); letter-spacing: 1.5px; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+.review-card h3 { font-family: 'Montserrat', sans-serif; font-size: 18px; line-height: 1.3; margin-bottom: 8px; }
+.review-card h3 a { color: var(--navy); text-decoration: none; }
+.review-card h3 a:hover { color: var(--orange); }
+.review-card .excerpt { color: var(--muted); font-size: 13px; }
+.review-card .meta { padding: 14px 22px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; }
+
+/* About strip */
+.about-strip { background: var(--navy); color: #fff; padding: 70px 0; }
+.about-strip .row { display: grid; grid-template-columns: 200px 1fr; gap: 40px; align-items: center; }
+.about-strip .av { width: 180px; height: 180px; border-radius: 6px; background: linear-gradient(135deg, var(--orange), #ffa07a); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Montserrat', sans-serif; font-size: 70px; font-weight: 800; }
+.about-strip h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; margin-bottom: 12px; }
+.about-strip h2 .acc { color: var(--orange); }
+.about-strip p { color: #c5cedf; margin-bottom: 10px; }
+.about-strip a.btn { display: inline-block; padding: 11px 22px; background: var(--orange); color: #fff; text-decoration: none; font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; border-radius: 3px; margin-top: 12px; }
+
+/* Footer */
+footer.site { background: var(--navy-dark); color: #8a96ac; padding: 60px 0 30px; }
+footer.site .row { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+footer.site h5 { font-family: 'Montserrat', sans-serif; color: var(--orange); font-size: 13px; letter-spacing: 2px; margin-bottom: 16px; text-transform: uppercase; }
+footer.site ul { list-style: none; }
+footer.site li { margin-bottom: 8px; }
+footer.site a { color: #b8c2d4; text-decoration: none; font-size: 13px; }
+footer.site a:hover { color: var(--orange); }
+footer.site .copy { margin-top: 40px; padding-top: 22px; border-top: 1px solid #1c3457; text-align: center; font-size: 12px; }
+
+@media (max-width: 900px) {
+  .hero h1 { font-size: 30px; }
+  .hero .grid, .review-grid, .about-strip .row, footer.site .row { grid-template-columns: 1fr; }
+  .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  nav.main { gap: 10px 14px; font-size: 12px; flex-wrap: wrap; }
+  header.site .row { flex-wrap: wrap; gap: 10px; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+<div class="container row">
+<span>★ 戶外運動裝備 · 15 年實戰經驗 · 100% 親身使用評測</span>
+<span>📧 hello@adviseist.com</span>
+</div>
+</div>
+
+<header class="site">
+<div class="container row">
+<a href="/" class="logo" style="text-decoration:none; color:inherit;">
+<div class="logo-mark">A</div>
+<div>
+<div class="logo-text">Adviseist</div>
+<div class="logo-tag">TESTED · VERIFIED · RECOMMENDED</div>
+</div>
+</a>
+<nav class="main">
+<a href="/climbing-gear-2026">攀岩</a>
+<a href="/beginner-camping-gear">露營</a>
+<a href="/heart-rate-monitor-review">跑步</a>
+<a href="/best-football-boots-2026">球類</a>
+<a href="/outdoor-sports-insurance">安全</a>
+<a href="/about">關於</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container grid">
+<div>
+<h1>不浪費你的錢 <span class="acc">買錯裝備。</span></h1>
+<p class="lead">Adviseist 是 Tony 用 15 年戶外運動經驗，500+ 件實際使用過的裝備寫下的評測站。所有推薦都跑過實戰，至少使用 3 個月才寫文章。</p>
+<a href="/climbing-gear-2026" style="display:inline-block; padding:14px 28px; background:var(--orange); color:#fff; text-decoration:none; font-family:'Montserrat',sans-serif; font-weight:700; font-size:14px; letter-spacing:1.5px; text-transform:uppercase; border-radius:3px;">→ 看 2026 攀岩裝備指南</a>
+<div class="stats">
+<div class="stat"><div class="num">15</div><div class="lbl">YEARS HANDS-ON</div></div>
+<div class="stat"><div class="num">500+</div><div class="lbl">PRODUCTS TESTED</div></div>
+<div class="stat"><div class="num">0</div><div class="lbl">PAID REVIEWS</div></div>
+</div>
+</div>
+<div class="panel">
+<h4>本月最熱評測</h4>
+<ul>
+<li><a href="/climbing-gear-2026" style="color:#fff; text-decoration:none;">2026 攀岩裝備完整選購指南</a></li>
+<li><a href="/best-football-boots-2026" style="color:#fff; text-decoration:none;">世足前的 5 雙足球鞋推薦</a></li>
+<li><a href="/beginner-camping-gear" style="color:#fff; text-decoration:none;">新手露營裝備懶人包</a></li>
+<li><a href="/heart-rate-monitor-review" style="color:#fff; text-decoration:none;">跑者必備：5 款心率帶評測</a></li>
+<li><a href="/outdoor-sports-insurance" style="color:#fff; text-decoration:none;">戶外運動意外保險選擇</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="cat-bar">
+<div class="container">
+<div class="cat-grid">
+<a href="/climbing-gear-2026" class="cat-item">
+<div class="ico">🧗</div>
+<div class="name">Climbing</div>
+<div class="cnt">攀岩裝備</div>
+</a>
+<a href="/beginner-camping-gear" class="cat-item">
+<div class="ico">⛺</div>
+<div class="name">Camping</div>
+<div class="cnt">露營裝備</div>
+</a>
+<a href="/heart-rate-monitor-review" class="cat-item">
+<div class="ico">🏃</div>
+<div class="name">Running</div>
+<div class="cnt">跑步裝備</div>
+</a>
+<a href="/best-football-boots-2026" class="cat-item">
+<div class="ico">⚽</div>
+<div class="name">Ball Sports</div>
+<div class="cnt">球類運動</div>
+</a>
+<a href="/outdoor-sports-insurance" class="cat-item">
+<div class="ico">🛡️</div>
+<div class="name">Safety</div>
+<div class="cnt">戶外安全</div>
+</a>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="section-head">
+<h2>最新評測</h2>
+<a href="/outdoor-gear-buyers-guide-2026">VIEW ALL →</a>
+</div>
+<div class="review-grid">
+
+<article class="review-card">
+<div class="img-area"><img src="/assets/images/adviseist-hero-1-climbing.webp" alt="2026 攀岩裝備完整選購指南">
+<div class="badge">CLIMBING</div>
+<div class="rating">★ 4.7</div>
+</div>
+<div class="info">
+<div class="cat-tag">PURCHASE GUIDE</div>
+<h3><a href="/climbing-gear-2026">2026 攀岩裝備完整選購指南</a></h3>
+<p class="excerpt">繩索、安全帶、攀岩鞋、頭盔、確保器——攀岩 5 大類裝備的選購邏輯一次說完。</p>
+</div>
+<div class="meta"><span>By Tony</span><span>2026-05-23</span></div>
+</article>
+
+<article class="review-card">
+<div class="img-area"><img loading="lazy" src="/assets/images/adviseist-hero-2-football-boots.webp" alt="世足前的 5 雙足球鞋推薦">
+<div class="badge">BALL SPORTS</div>
+<div class="rating">★ 4.5</div>
+</div>
+<div class="info">
+<div class="cat-tag">WORLD CUP 2026</div>
+<h3><a href="/best-football-boots-2026">世足前的 5 雙足球鞋推薦</a></h3>
+<p class="excerpt">Nike Mercurial、Adidas X、Puma Future、Mizuno Morelia、New Balance Furon 五款比較。</p>
+</div>
+<div class="meta"><span>By Tony</span><span>2026-05-26</span></div>
+</article>
+
+<article class="review-card">
+<div class="img-area"><img loading="lazy" src="/assets/images/adviseist-hero-3-camping.webp" alt="新手露營裝備懶人包">
+<div class="badge">CAMPING</div>
+<div class="rating">★ 4.6</div>
+</div>
+<div class="info">
+<div class="cat-tag">BEGINNER GUIDE</div>
+<h3><a href="/beginner-camping-gear">新手露營裝備懶人包</a></h3>
+<p class="excerpt">8 大類裝備從帳篷到收納——買哪、買多少錢、怎麼避免重複買。</p>
+</div>
+<div class="meta"><span>By Tony</span><span>2026-05-29</span></div>
+</article>
+
+<article class="review-card">
+<div class="img-area"><img loading="lazy" src="/assets/images/adviseist-hero-4-heart-rate.webp" alt="跑者必備：5 款心率帶評測">
+<div class="badge">RUNNING</div>
+<div class="rating">★ 4.4</div>
+</div>
+<div class="info">
+<div class="cat-tag">PRODUCT REVIEW</div>
+<h3><a href="/heart-rate-monitor-review">跑者必備：5 款心率帶評測</a></h3>
+<p class="excerpt">Polar / Garmin / Wahoo / Suunto / 小米——精度、舒適度、耐用性全方位實測。</p>
+</div>
+<div class="meta"><span>By Tony</span><span>2026-06-01</span></div>
+</article>
+
+<article class="review-card">
+<div class="img-area"><img loading="lazy" src="/assets/images/adviseist-hero-5-insurance.webp" alt="戶外運動意外保險選擇">
+<div class="badge">SAFETY</div>
+<div class="rating">★ 4.3</div>
+</div>
+<div class="info">
+<div class="cat-tag">INSURANCE</div>
+<h3><a href="/outdoor-sports-insurance">戶外運動意外保險選擇</a></h3>
+<p class="excerpt">旅遊險、運動險、海外緊急、登山險、潛水險——5 類條款最常見的陷阱。</p>
+</div>
+<div class="meta"><span>By Tony</span><span>2026-06-04</span></div>
+</article>
+
+<article class="review-card">
+<div class="img-area"><img loading="lazy" src="/assets/images/adviseist-hero-1-climbing.webp" alt="攀岩繩索維護完整教學">
+<div class="badge">CLIMBING</div>
+<div class="rating">★ 4.6</div>
+</div>
+<div class="info">
+<div class="cat-tag">MAINTENANCE</div>
+<h3><a href="/climbing-rope-maintenance">攀岩繩索維護完整教學</a></h3>
+<p class="excerpt">攀岩繩能用多久？怎麼洗才不傷繩？清洗 SOP、收納方式、退役判斷與延長壽命的 5 守則。</p>
+</div>
+<div class="meta"><span>By Tony</span><span>2026-06-10</span></div>
+</article>
+
+<article class="review-card">
+<div class="img-area"><img loading="lazy" src="/assets/images/adviseist-hero-2-football-boots.webp" alt="2026 世足頂尖球員裝備觀察">
+<div class="badge">BALL SPORTS</div>
+<div class="rating">★ 4.5</div>
+</div>
+<div class="info">
+<div class="cat-tag">WORLD CUP 2026</div>
+<h3><a href="/2026-world-cup-player-gear-analysis">2026 世足頂尖球員裝備觀察</a></h3>
+<p class="excerpt">2026 世足球員穿什麼鞋、戴什麼護具？Tony 觀察 5 國代表隊主力球員的裝備選擇邏輯。</p>
+</div>
+<div class="meta"><span>By Tony</span><span>2026-06-13</span></div>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="about-strip">
+<div class="container row">
+<div class="av"><img loading="lazy" src="/assets/images/adviseist-tony-avatar.webp" alt="Tony"></div>
+<div>
+<h2>我是 Tony，<span class="acc">不接業配</span>的裝備測評者。</h2>
+<p>攀岩 15 年、露營 12 年、跑步 8 年。所有評測都基於我親身使用至少 3 個月，aff link 會明確標註誠實揭露。</p>
+<p>如果你看到這個站推薦某個裝備，可以放心——我用過。</p>
+<a href="/about" class="btn">→ 關於 Tony</a>
+</div>
+</div>
+</section>
+
+<footer class="site">
+<div class="container row">
+<div>
+<div class="logo" style="margin-bottom: 14px;">
+<div class="logo-mark">A</div>
+<div class="logo-text" style="color:#fff;">Adviseist</div>
+</div>
+<p style="font-size:13px;">戶外運動裝備實測評比<br>不接業配、不收推薦費、不寫沒用過的東西。</p>
+</div>
+<div>
+<h5>分類</h5>
+<ul>
+<li><a href="/climbing-gear-2026">攀岩</a></li>
+<li><a href="/beginner-camping-gear">露營</a></li>
+<li><a href="/heart-rate-monitor-review">跑步</a></li>
+<li><a href="/best-football-boots-2026">球類</a></li>
+<li><a href="/outdoor-sports-insurance">安全</a></li>
+</ul>
+</div>
+<div>
+<h5>站台</h5>
+<ul>
+<li><a href="/about">關於 Tony</a></li>
+<li><a href="/contact">聯絡</a></li>
+<li><a href="/sitemap.xml">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h5>政策</h5>
+<ul>
+<li><a href="/disclosure">aff 揭露</a></li>
+<li><a href="/terms">使用條款</a></li>
+<li><a href="/privacy">隱私政策</a></li>
+</ul>
+</div>
+</div>
+<div class="container copy">
+&copy; 2026 Adviseist · Made by Tony in Kaohsiung · hello@adviseist.com
+</div>
+</footer>
+
+</body>
+</html>
