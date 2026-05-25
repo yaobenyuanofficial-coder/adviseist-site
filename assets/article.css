@@ -145,6 +145,4 @@ footer.site-foot a { color: var(--orange); text-decoration: none; }
   .product-card .pros-cons { grid-template-columns: 1fr; }
   header.site .row { flex-wrap: wrap; gap: 10px; }
   nav.main { gap: 10px 14px; font-size: 12px; flex-wrap: wrap; }
-  /* 寬表格在手機改成「表格自己橫向捲動」，不撐寬整頁 */
-  .content table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 }
